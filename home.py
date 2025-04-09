@@ -89,11 +89,12 @@ st.markdown(
         }
     </style>
     <div style="text-align: center;">
-        <img class="responsive-image" src="vezc.jpg" alt="VEZC logo">
+        <img class="responsive-image" src="https://raw.githubusercontent.com/DataBlueprintConsulting/vezc_dashboard/main/vezc.jpg" alt="VEZC logo">
     </div>
     """,
     unsafe_allow_html=True
 )
+
 
 with st.expander("ℹ️ Wat doet deze tool precies?"):
     st.write("""
