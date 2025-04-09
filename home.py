@@ -62,7 +62,28 @@ veld_coords = {
 }
 
 # === HEADER ===
+
 st.title("✈️ Venlo Eindhoven ZweefvliegClub Vluchtadministratie")
+st.markdown(
+    """
+    <style>
+        .responsive-image {
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .responsive-image {
+                max-width: 100% !important;
+            }
+        }
+    </style>
+    <div style="text-align: center;">
+        <img class="responsive-image" src="vezc.jpg" alt="VEZC logo">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 st.image("vezc.jpg", use_column_width=True)
 
 with st.expander("ℹ️ Wat doet deze tool precies?"):
