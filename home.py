@@ -62,8 +62,18 @@ veld_coords = {
 }
 
 # === HEADER ===
+# st.title("✈️ Venlo Eindhoven ZweefvliegClub Vluchtadministratie")
+# st.image("vezc.jpg", use_column_width=True)
+
+# with st.expander("ℹ️ Wat doet deze tool precies?"):
+#     st.write("""
+#         Ontdek hier een handige tool om je vluchtenregistratie overzichtelijk bij te houden. 
+#         Je kunt snel het totaal aantal vlieguren en starts per vliegtuigtype inzien en filteren op veld, type, datum en meer.
+#         Upload een Excel uit Startadministratie en bekijk direct visuele inzichten.
+#     """)
 
 st.title("✈️ Venlo Eindhoven ZweefvliegClub Vluchtadministratie")
+
 st.markdown(
     """
     <style>
@@ -84,7 +94,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-# st.image("vezc.jpg", use_column_width=True)
 
 with st.expander("ℹ️ Wat doet deze tool precies?"):
     st.write("""
@@ -92,6 +101,7 @@ with st.expander("ℹ️ Wat doet deze tool precies?"):
         Je kunt snel het totaal aantal vlieguren en starts per vliegtuigtype inzien en filteren op veld, type, datum en meer.
         Upload een Excel uit Startadministratie en bekijk direct visuele inzichten.
     """)
+
 
 # === UPLOADEN ===
 uploaded_file = st.file_uploader("📁 Upload hier je Startadministratie in Excel-formaat", type=['xlsx'])
