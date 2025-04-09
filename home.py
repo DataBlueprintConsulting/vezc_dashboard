@@ -84,7 +84,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.image("vezc.jpg", use_column_width=True)
+# st.image("vezc.jpg", use_column_width=True)
 
 with st.expander("ℹ️ Wat doet deze tool precies?"):
     st.write("""
