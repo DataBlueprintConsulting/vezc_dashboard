@@ -58,20 +58,9 @@ veld_coords = {
     'Terlet': (52.0603, 5.9386),
     'Stadlohn': (51.9921, 6.9138),
     'Stendal': (52.6041, 11.8518)
-    # Voeg meer velden toe indien gewenst
 }
 
 # === HEADER ===
-# st.title("✈️ Venlo Eindhoven ZweefvliegClub Vluchtadministratie")
-# st.image("vezc.jpg", use_column_width=True)
-
-# with st.expander("ℹ️ Wat doet deze tool precies?"):
-#     st.write("""
-#         Ontdek hier een handige tool om je vluchtenregistratie overzichtelijk bij te houden. 
-#         Je kunt snel het totaal aantal vlieguren en starts per vliegtuigtype inzien en filteren op veld, type, datum en meer.
-#         Upload een Excel uit Startadministratie en bekijk direct visuele inzichten.
-#     """)
-
 st.title("✈️ Venlo Eindhoven ZweefvliegClub Vluchtadministratie")
 
 st.markdown(
@@ -149,7 +138,6 @@ col1, col2, col3 = st.columns(3)
 
 if not filtered_df.empty:
     starts_per_type = filtered_df['Type'].value_counts()
-    # hours_per_type = filtered_df.groupby('Type')['Vluchtduur'].sum()
     hours_per_type = filtered_df.groupby('Type')['Vluchtduur'].sum().sort_values(ascending=False)
 
     # === COL1: TABEL DATA ===
